@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="css/main.css">
+  <title>Sunnyside agency landing page</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul class="sidebar">
+                <li onclick="hideSideBar()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Projects</a></li>
+                <li><a href="#">Submit</a></li>
+            </ul>
+            <ul>
+                <img src="./images/logo.svg" alt="SunnySide Logo">
+                <li class="hideOnMobile"><a href="#">About</a></li>
+                <li class="hideOnMobile"><a href="#">Services</a></li>
+                <li class="hideOnMobile"><a href="#">Projects</a></li>
+                <li class="hideOnMobile"><a href="#">Submit</a></li>
+                <li class="menu-button" onclick="showSideBar()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+            </ul>
+        </nav>
+
+        <div class="heroSection">
+            <h2>WE ARE CREATIVES</h2>
+            <img src="./images/icon-arrow-down.svg" alt="Down arrow Icon">
+        </div>
+    </header>
+
+    <section class="items" id="items">
+        <div class="item">
+            <div class="item__descriptionDiv">
+                <h2>Transform your brand</h2>
+                <p> We are a full-service creative agency specializing in helping brands grow fast. 
+                    Engage your clients through compelling visuals that do most of the marketing for you.</p>
+                <a href="#">LEARN MORE</a>
+            </div>
+            <picture>
+                <source media="(max-width: 500px)" srcset="./images/mobile/image-transform.jpg">
+                <img src="./images/desktop/image-transform.jpg" alt="Egg Image">
+            </picture>
+        </div>
+        <div class="item">
+            <picture>
+                <source media="(max-width: 500px)" srcset="./images/mobile/image-stand-out.jpg">
+                <img src="./images/desktop/image-stand-out.jpg" alt="StandOut Image">
+            </picture>
+            <div class="item__descriptionDiv">
+                <h2>Stand out to the right audience</h2>
+                <p>Using a collaborative formula of designers, researchers, photographers, videographers, and copywriters, we’ll build and extend your brand in digital places. 
+                </p>
+                <a href="#">LEARN MORE</a>
+            </div>
+        </div>
+        <div class="item item3">
+            <div class="item__div">
+                <picture>
+                    <source media="(max-width: 500px)" srcset="./images/mobile/image-graphic-design.jpg">
+                    <img src="./images/desktop/image-graphic-design.jpg" alt="Graphics Design Image">
+                </picture>
+
+                <div class="item__text design">
+                    <h2>Graphic design</h2>
+                    <p>Great design makes you memorable. We deliver artwork that underscores your brand message and captures potential clients’ attention.</p>
+                </div>
+            </div>
+            <div class="item__div">
+                <picture>
+                    <source media="(max-width: 500px)" srcset="./images/mobile/image-photography.jpg">
+                    <img src="./images/desktop/image-photography.jpg" alt="Photography Image">
+                </picture>
+
+                <div class="item__text photography">
+                    <h2>Photography</h2>
+                    <p>Increase your credibility by getting the most stunning, high-quality photos that improve your business image.
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="testimonials">
+        <h2>Client Testimonials</h2>
+        <div class="testimonials">
+            <div class="testimonial">
+                <img src="./images/image-emily.jpg" alt="Emily's Profile Image">
+                <p class="testimonial__text">We put our trust in Sunnyside and they delivered, making sure our needs were met and deadlines were always hit.
+                </p>
+
+                <div>
+                    <p class="testimonial__author">Emily R</p>
+                    <p class="testimonial__author-role">Marketing Director</p>
+                </div>
+            </div>
+
+            <div class="testimonial">
+                <img src="./images/image-thomas.jpg" alt="Thomas Profile Image">
+                <p class="testimonial__text">Sunnyside’s enthusiasm coupled with their keen interest in our brand’s success made it a satisfying and enjoyable experience.
+                </p>
+
+                <div>
+                    <p class="testimonial__author">Thomas S.</p>
+                    <p class="testimonial__author-role">Chief Operating Officer</p>
+                </div>
+            </div>
+
+            <div class="testimonial">
+                <img class="testimonial__author-image" src="./images/image-jennie.jpg" alt="Jennie's Profile Image">
+                <p class="testimonial__text">  Incredible end result! Our sales increased over 400% when we worked with Sunnyside. Highly recommended!
+                </p>
+
+                <div>
+                    <p class="testimonial__author">Jennie F</p>
+                    <p class="testimonial__author-role">Business Owner</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="images" id="images">
+        <picture>
+            <source media="(max-width: 650px)" srcset="./images/mobile/image-gallery-milkbottles.jpg">
+            <img src="./images/desktop/image-gallery-milkbottles.jpg" alt="MilkBottles Image">
+        </picture>
+        <picture>
+            <source media="(max-width: 650px)" srcset="./images/mobile/image-gallery-orange.jpg">
+            <img src="./images/desktop/image-gallery-orange.jpg" alt="Orange Image">
+        </picture>
+        <picture>
+            <source media="(max-width: 650px)" srcset="./images/mobile/image-gallery-cone.jpg">
+            <img src="./images/desktop/image-gallery-cone.jpg" alt="Gallery Cone Image">
+        </picture>
+        <picture>
+            <source media="(max-width: 650px)" srcset="./images/mobile/image-gallery-sugar-cubes.jpg">
+            <img src="./images/desktop/image-gallery-sugarcubes.jpg" alt="Sugarcubes Image">
+        </picture>
+    </section>
+
+
+    <footer class="footer">
+        <div class="footer__internal-links">
+            <img class="footer__internal-links__img" src="./images/logo.svg" alt="SunnySide Logo">
+        
+            <div class="links">
+                <a href="#">About</a>
+                <a href="#">Services</a>
+                <a href="#">Projects</a>
+            </div>
+        </div>
+
+        <div class="footer__external-links">
+            <div class="media">
+                <img src="./images/icon-facebook.svg" alt="Facebook Social Media Icon">
+                <img src="./images/icon-instagram.svg" alt="Instagram Social Media Icon">
+                <img src="./images/icon-twitter.svg" alt="Twitter Social Media Icon">
+                <img src="./images/icon-pinterest.svg" alt="Pinterest Social Media Icon">
+            </div>
+        </div>
+    </footer>
+
+<script>
+    function showSideBar(){
+        const sidebar = document.querySelector(".sidebar")
+        sidebar.style.display = 'flex';
+    }
+    function hideSideBar(){
+        const sidebar = document.querySelector(".sidebar")
+        sidebar.style.display = 'none'
+    }
+</script>
+</body>
+</html>
